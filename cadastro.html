@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="shortcut icon" type="imagex-icon" href="ico/favicon.png">
+    <title>Cadastro</title>
+</head>
+<body>
+  <nav>
+
+      <div class="logo">
+          <a href="index.html"> HorarioAPP </a>
+      </div>
+
+      <ul>
+          <li> <a href="cadastro.html"> Cadastro </a> </li>
+          <li> <a href="login.html"> Login </a> </li>
+      </ul>
+
+  </nav>
+
+    <div class="registerContainer">
+      <h1>Cadastro</h1>
+        <form action="">
+          <label for="name">Nome: </label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" style="width: 300px;" required> <!--colocar required-->
+  
+          <div class="input-group">
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" style="width: 300px;" required> <!--colocar required-->
+            </div>
+  
+            <div>
+              <label for="instituicao">Instituição de Ensino:</label>
+              <input type="text" id="instituicao" name="instituicao" placeholder="Digite sua Instituição" style="width: 300px;" required > <!--colocar required-->
+            </div>
+          </div>
+  
+          <div class="inputGroup">
+            <div>
+                <label for="state">Estado:</label>
+                <select id="state" name="state"> <!--colocar required-->
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+      
+            <div class="inputGroup">
+                <label for="city">Cidade:</label>
+                <select id="city" name="city"> <!--colocar required-->
+                    <option value="" selected disabled>Selecione⠀⠀ ⠀⠀⠀⠀⠀</option>
+                    <option value="Rio Branco">Rio Branco</option> <!--AC-->
+                    <option value="Maceió">Maceió</option> <!--AL-->
+                    <option value="Macapá">Macapá</option> <!--AP-->
+                    <option value="Manaus">Manaus</option> <!--AM-->
+                    <option value="Salvador">Salvador</option> <!--BA-->
+                    <option value="Fortaleza">Fortaleza</option> <!--CE-->
+                    <option value="Brasília">Brasília</option> <!--DF-->
+                    <option value="Vitória">Vitória</option> <!--ES-->
+                    <option value="Goiânia">Goiânia</option> <!--GO-->
+                    <option value="São Luís">São Luís</option> <!--MA-->
+                    <option value="Cuiabá">Cuiabá</option> <!--MT-->
+                    <option value="Campo Grande">Campo Grande</option> <!--MS-->
+                    <option value="Belo Horizonte">Belo Horizonte</option> <!--MG-->
+                    <option value="Belém">Belém</option> <!--PA-->
+                    <option value="João Pessoa">João Pessoa</option> <!--PB-->
+                    <option value="Curitiba">Curitiba</option> <!--PR-->
+                    <option value="Recife">Recife</option> <!--RECIFE-->
+                  <!-- Adicione mais opções de cidade aqui -->
+                </select>
+              </div>
+      
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" style="width: 300px;" required> <!--colocar required-->
+          <a href="login.html" class="registerButton">Registrar</a>
+          
+         </form>
+      </div>
+    </body>
+    </html>
+      

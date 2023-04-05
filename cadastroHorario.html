@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastroHorario.css">
+    <link rel="shortcut icon" type="image/-icon" href="ico/favicon.png">
+    <title>Cadastro de horários</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> HorarioAPP </a>
+        </div>
+
+        <ul>
+            <li> <a href="horarioPage.html"> Minha Conta </a> </li>
+            <li> <a href="login.html"> Logout </a> </li>
+        </ul>
+
+    </nav>
+  
+    <div class="selectOption">
+      <h1>Nova Disciplina</h1>
+      <br>
+        <form action="">
+            <label for="day">Dia da semana</label>
+            <select id="day" name="day" style="width: 300px;" required>
+                <option value="" selected disabled>Selecione o dia da semana</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+            </select>
+    
+            <div>
+                <label for="courseName">Nome da disciplina:</label>
+                <input type="text" id="courseName" name="courseName" placeholder="Informe a disciplina" style="width: 300px;" required>
+            </div>
+    
+            <div>
+                <label for="startHour">Horário de início: </label>
+                <select id="startHour" name="startHour" style="width: 300px;" required>
+                    <option value="" selected disabled>Selecione o horário de início</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:20">08:20</option>
+                    <option value="09:10">09:10</option>
+                    <option value="10:10">10:10</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:50">11:50</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:50">19:50</option>
+                    <option value="20:20">20:20</option>
+                    <option value="21:10">21:10</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="endHour">Horário de término: </label>
+                <select id="endHour" name="endHour" style="width: 300px;" required>
+                    <option value="" selected disabled>Selecione o horário de término</option>
+                    <option value="08:20">08:20</option>
+                    <option value="09:10">09:10</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:50">11:50</option>
+                    <option value="12:40">12:40</option>
+                    <option value="19:20">19:20</option>
+                    <option value="20:10">20:10</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:50">21:50</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="classroom">Nome do Professor</label>
+                <input type="text" id="classroom" name="classroom" placeholder="Informe o nome do professor" style="width: 300px;" required>
+                <label for="classroom">Sala:</label>
+                <input type="text" id="classroom" name="classroom" placeholder="ID" style="width: 70px;" required>
+            </div>
+
+            <button type="button" onclick="Adicionar()" style="width:300px";>Adicionar</button>
+
+            <script>
+                function Adicionar(){
+                    
+                    alert('Dados adicionados com sucesso')
+                }
+            </script>
+
+
+        </form>
+    </div>
+    
